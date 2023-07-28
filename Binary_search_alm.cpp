@@ -9,7 +9,7 @@ int binarySearch(int L[], int N, int Key) {
 
     while (Beg <= End) {
         Mid = (Beg + End) / 2;
-
+        // for descending order: if (Key > L[Mid]), else if (Key < L[Mid])
         if (Key < L[Mid]) {
             End = Mid - 1;
         } else if (Key > L[Mid]) {

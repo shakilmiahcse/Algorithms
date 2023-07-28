@@ -23,6 +23,7 @@ void merge(vector<int>& arr, int low, int mid, int high) {
 
     // Merge the two subarrays back into the original array
     while (i < n1 && j < n2) {
+            // for descending order: left[i] >= right[j]
         if (left[i] <= right[j]) {
             arr[k] = left[i];
             i++;

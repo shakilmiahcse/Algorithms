@@ -11,6 +11,7 @@ void selectionSort(vector<int>& arr) {
 
         // Find the minimum element in the unsorted part of the array
         for (int j = i + 1; j < n; j++) {
+                // for descending order: arr[j] > arr[minIndex]
             if (arr[j] < arr[minIndex]) {
                 minIndex = j;
             }

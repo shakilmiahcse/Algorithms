@@ -17,6 +17,7 @@ void quickSort(vector<int>& arr, int low, int high) {
 
         for (int j = low; j < high; j++) {
             // If the current element is smaller than or equal to the pivot
+            // for descending order: arr[j] >= pivot
             if (arr[j] <= pivot) {
                 i++; // Increment the index of the smaller element
                 swap(arr[i], arr[j]);

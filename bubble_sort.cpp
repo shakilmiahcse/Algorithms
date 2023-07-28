@@ -11,6 +11,7 @@ void bubbleSort(vector<int>& arr) {
         bool swapped = false;
 
         // Compare adjacent elements and swap them if necessary
+        //for descending order: arr[j] < arr[j + 1]
         for (int j = 0; j < n - i - 1; j++) {
             if (arr[j] > arr[j + 1]) {
                 swap(arr[j], arr[j + 1]);
